@@ -8,6 +8,8 @@
 *.pem
 *.secret
 config.local.py
+start.bat
+start.sh
 
 # 🐍 Python
 __pycache__/
