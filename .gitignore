@@ -1,0 +1,54 @@
+# ========================================
+#   GITIGNORE для Warehouse-Orders-Manager
+# ========================================
+
+# 🔐 Секреты и конфиги (НИКОГДА не загружать!)
+.env
+*.key
+*.pem
+*.secret
+config.local.py
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+#  Telegram Bot
+bot_token.txt
+keys.txt
+ключи.txt
+
+# 💾 Базы данных
+*.db
+*.sqlite
+*.sqlite3
+
+# 📝 Логи
+*.log
+logs/
+
+# 💻 IDE и редакторы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 🖥 Операционная система
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 📦 Временные файлы
+tmp/
+temp/
+*.tmp
