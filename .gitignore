@@ -1,0 +1,48 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Reports
+reports/*.xlsx
+reports/*.csv
+
+# Logs
+*.log
+logs/
+
+# Temporary
+*.tmp
+*.temp
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
