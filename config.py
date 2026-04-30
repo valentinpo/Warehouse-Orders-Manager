@@ -1,16 +1,11 @@
 import os
 from dotenv import load_dotenv
 
-# Загружаем .env
 load_dotenv()
 
-# Проверяем, загрузился ли токен
-BOT_TOKEN = os.getenv('BOT_TOKEN')
-DB_FILE = os.getenv('DB_FILE')
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+DB_FILE = os.getenv("DB_FILE", "warehouse.db")
+LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 
-# Отладочный вывод
 if not BOT_TOKEN:
-    print("ОШИБКА: BOT_TOKEN не найден в .env файле!")
-    print(f"Путь к .env: {os.path.abspath('.env')}")
-else:
-    print("✅ Токен успешно загружен")
+    raise ValueError("❌ Не задан BOT_TOKEN в .env")\n
