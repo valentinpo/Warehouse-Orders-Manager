@@ -38,10 +38,25 @@ reports/*.csv
 *.log
 logs/
 
+# Backups
+*.backup.*
+*.bak
+*~
+
+# AI-assistant local config
+.gigaide/
+
+# Local photos (orders, modules)
+photos/
+
 # Temporary
 *.tmp
 *.temp
 .cache/
+
+# Helper scripts
+fix_get_db.py
+update_project.py
 
 # OS
 .DS_Store
